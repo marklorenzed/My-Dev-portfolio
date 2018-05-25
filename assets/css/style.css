@@ -1,0 +1,155 @@
+* {
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+
+[class*="nav-item"] {
+	text-align: center;
+}
+[class*="nav-link"] {
+	color: gray;
+}
+
+.landingPage {
+	background-color: #036396;
+	/*box-shadow: 0 5px 5px grey;;*/
+	height: 500px;
+	color: white;
+}
+.nav {
+	background-color: #036396;
+	height: 50px;
+	padding-top: 10px;
+	
+}
+.nav-item{
+	color: white;
+}
+#header {
+	position: relative;
+	top: 25%;
+}
+.header {
+	font-size: 5em;
+	/*color: #d9d9d9;*/
+	
+	font-weight: 800;
+}
+
+a:hover { 
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.aboutMe {
+	min-height: 300px;
+	background-color: #f2f2f2;
+}
+
+.avatar {
+	height: 200px;
+	border: 2px solid gray;
+}
+
+
+
+hr {
+	background-color: black;
+}
+
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+
+
+.text {
+	padding: 10px;
+}
+
+
+
+
+
+h2 {
+	font-family: 'Roboto Slab', serif;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+}
+
+
+h1, h4 ,nav {
+	font-family: 'Raleway', sans-serif;
+}
+
+.progressleft {
+	background-color: #b3b3b3;
+}
+
+
+
+
+
+
+/*// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	.landingPage {
+		height: 50vh;
+		
+	}
+	#header {
+		position: relative;
+		top: 40%;
+	}
+
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { ... }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { ... }
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.landingPage{
+		height: 100vh;
+		
+	}
+	#header {
+		position: relative;
+		top: 40%;
+	}
+	.work {
+		padding: 50px;
+	}
+	.overlay {
+	  position: absolute;
+	  top: 100%;
+	  left: 0;
+	  right: 0;
+	  background-color: #008CBA;
+	  overflow: hidden;
+	  width: 100%;
+	  height: 0;
+	  transition: .5s ease;
+	}
+
+	.workcontainer:hover .overlay {
+	  top: 50%;
+	  height: 50%;
+	}
+}
