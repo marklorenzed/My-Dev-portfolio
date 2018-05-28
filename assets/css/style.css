@@ -15,7 +15,7 @@
 .landingPage {
 	background-color: #036396;
 	/*box-shadow: 0 5px 5px grey;;*/
-	height: 500px;
+	min-height: 500px;
 	color: white;
 }
 .nav {
@@ -29,7 +29,7 @@
 }
 #header {
 	position: relative;
-	top: 25%;
+	top: 10vh;
 }
 .header {
 	font-size: 5em;
@@ -83,8 +83,10 @@ h2 {
 	font-family: 'Roboto Slab', serif;
 }
 
-p {
-	font-family: 'Lato', sans-serif;
+.aboutBio {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 1em;
+	margin-top: 20px;
 }
 
 
@@ -107,18 +109,28 @@ h1, h4 ,nav {
 // Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 	.landingPage {
-		height: 50vh;
+		height: 500px;
 		
 	}
 	#header {
 		position: relative;
-		top: 40%;
+		top: 30%;
 	}
 
 }
 
 /*// Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) {
+	.landingPage {
+		height: 500px;
+		
+	}
+	#header {
+		position: relative;
+		top: 30%;
+	}
+
+}
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { ... }
