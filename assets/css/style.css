@@ -4,48 +4,49 @@
 	box-sizing: border-box;
 }
 
-
 [class*="nav-item"] {
 	text-align: center;
 }
 [class*="nav-link"] {
 	color: gray;
 }
-
 .landingPage {
 	background-color: #036396;
-	/*box-shadow: 0 5px 5px grey;;*/
-	min-height: 500px;
+	height: 500px;
 	color: white;
+	position: relative;
+}
+.landingPageLinks {
+	position: absolute;
+	top: 90%;
 }
 .nav {
 	background-color: #036396;
 	height: 50px;
 	padding-top: 10px;
-	
 }
 .nav-item{
 	color: white;
 }
 #header {
-	position: relative;
-	top: 10vh;
+	position: absolute;
+	top: 30%;
 }
 .header {
-	font-size: 5em;
+	font-size: 3em;
 	/*color: #d9d9d9;*/
 	
 	font-weight: 800;
 }
 
 a:hover { 
-    color: white;
+    color: #bfbfbf;
     text-decoration: none;
     border-bottom: 1px solid #d9d9d9;
 }
 
 .aboutMe {
-	min-height: 300px;
+	min-height: 150px;
 	background-color: #f2f2f2;
 }
 
@@ -53,50 +54,85 @@ a:hover {
 	height: 200px;
 	border: 2px solid gray;
 }
-
-
-
-hr {
-	background-color: black;
-}
-
-
-
 .image {
-  display: block;
-  width: 100%;
-  height: auto;
-
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: 80%;
+	transition: .5s ease;
+	backface-visibility: hidden;
 }
-
-
-
 .text {
-	padding: 10px;
+	padding: 0;
 }
-
-
-
-
-
 h2 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 800;
 }
-
 .aboutBio {
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 1em;
 	margin-top: 20px;
 }
-
-
-h1, h4 ,nav {
+p {
+	font-family: 'Titillium Web', sans-serif;
+}
+h1,nav {
 	font-family: 'Raleway', sans-serif;
+}
+
+h4 {
+	font-size: 1em;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 .progressleft {
 	background-color: #b3b3b3;
 }
+
+.bootstrap {
+	background-color: #a64dff;
+}
+
+.skills {
+	background-color: 
+	color: #cccccc;
+}
+.work {
+	background-color: #4d4d4d;
+	color: white;
+}
+.skillsimg {
+	height: 200px;
+	max-width: 200px;
+	padding: 20px;
+}
+.jsimg {
+	height: 200px;
+}
+.bootstrapimg {
+	height: 200px;
+}
+.contact {
+	background-color: #333333;
+	height: 300px;
+	color: white;
+}
+.workcontainer {
+	width: 75%;
+	height: 400px;
+	margin: 0 auto;
+}
+.landingPageLinks > a {
+	margin: 0 50px;
+}
+.skillname {
+	font-weight: bold;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+
+
 
 
 
@@ -109,59 +145,170 @@ h1, h4 ,nav {
 // Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 	.landingPage {
+		position: relative;
 		height: 500px;
 		
 	}
 	#header {
-		position: relative;
-		top: 30%;
+		position: absolute;
+		top: 25%;
+	}
+	.landingPageLinks {
+		position: absolute;
+		top: 90%;
+	}
+	.header {
+	font-size: 3em;
+	/*color: #d9d9d9;*/
+	
+	font-weight: 800;
 	}
 
 }
 
+
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 	.landingPage {
-		height: 500px;
+		position: relative;
+		height: 600px;
 		
 	}
 	#header {
-		position: relative;
+		position: absolute;
 		top: 30%;
+	}
+	.landingPageLinks {
+		position: absolute;
+		top: 90%;
+	}
+	.header {
+	font-size: 5em;
+	/*color: #d9d9d9;*/
+	
+	font-weight: 800;
+	}
+	.middle {
+		transition: .5s ease;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	.workcontainer:hover .image {
+		opacity: 0.1;
+	}
+
+	.workcontainer:hover .middle {
+		opacity: 1;
+	}
+	.workcontainer {
+		height: 300px;
 	}
 
 }
 
 /*// Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) {
+	.landingPage {
+		position: relative;
+		height: 600px;
+		
+	}
+	#header {
+		position: absolute;
+		top: 30%;
+	}
+	.landingPageLinks {
+		position: absolute;
+		top: 90%;
+	}
+	.header {
+	font-size: 5em;
+	/*color: #d9d9d9;*/
+	
+	font-weight: 800;
+	}
+	.middle {
+		transition: .5s ease;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	.workcontainer:hover .image {
+		opacity: 0.1;
+	}
+
+	.workcontainer:hover .middle {
+		opacity: 1;
+	}
+	.workcontainer {
+	
+	height: 180px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	}
+
+}
 
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 	.landingPage{
-		height: 100vh;
-		
+		position: relative;
+		min-height: 60vh;	
 	}
 	#header {
-		position: relative;
+		position: absolute;
 		top: 40%;
+	}
+	.landingPageLinks {
+		position: absolute;
+		top: 90%;
 	}
 	.work {
 		padding: 50px;
 	}
-	.overlay {
-	  position: absolute;
-	  top: 100%;
-	  left: 0;
-	  right: 0;
-	  background-color: #008CBA;
-	  overflow: hidden;
-	  width: 100%;
-	  height: 0;
-	  transition: .5s ease;
+	
+	.header {
+	font-size: 5em;
+	font-weight: 800;
+	}
+	.middle {
+		transition: .5s ease;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: center;
 	}
 
-	.workcontainer:hover .overlay {
-	  top: 50%;
-	  height: 50%;
+	.workcontainer:hover .image {
+		opacity: 0.1;
 	}
+
+	.workcontainer:hover .middle {
+		opacity: 1;
+	}
+	.workcontainer {
+	
+	height: 250px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	}
+
+
+
 }
