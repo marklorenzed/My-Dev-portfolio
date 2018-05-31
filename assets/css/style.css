@@ -10,6 +10,9 @@
 [class*="nav-link"] {
 	color: gray;
 }
+.container-fluid {
+	overflow-x: hidden;
+}
 .landingPage {
 	background-color: #036396;
 	height: 500px;
